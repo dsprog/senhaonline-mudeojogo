@@ -28,8 +28,7 @@ export const ContactForm = () => {
 
     try {
       await mockSubmitForm(formData);
-      toast({
-        title: "Sucesso!",
+      toast.success("Sucesso!", {
         description: "Recebemos seu contato! Em breve entraremos em contato para agendar sua consultoria gratuita.",
       });
       
@@ -42,10 +41,8 @@ export const ContactForm = () => {
         mensagem: ''
       });
     } catch (error) {
-      toast({
-        title: "Erro",
-        description: "Ocorreu um erro ao enviar. Tente novamente.",
-        variant: "destructive"
+      toast.error("Erro", {
+        description: "Ocorreu um erro ao enviar. Tente novamente."
       });
     } finally {
       setIsSubmitting(false);
