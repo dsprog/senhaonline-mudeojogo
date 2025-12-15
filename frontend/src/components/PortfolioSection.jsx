@@ -69,8 +69,8 @@ export const PortfolioSection = () => {
               </div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#E74C3C]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
-                <div className="flex items-center gap-2 text-white font-semibold">
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
+                <div className="flex items-center gap-2 text-[#E74C3C] font-semibold">
                   <span>Ver detalhes</span>
                   <ExternalLink className="w-4 h-4" />
                 </div>
