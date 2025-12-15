@@ -5,7 +5,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { mockSubmitForm } from '../mock';
-import { useToast } from '../hooks/use-toast';
+import { toast } from './ui/sonner';
 
 export const ContactForm = () => {
   const { toast } = useToast();
