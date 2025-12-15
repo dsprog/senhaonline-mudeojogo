@@ -33,11 +33,11 @@ export const PortfolioSection = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
                 
                 {/* Category badge */}
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#E74C3C]/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <span className="bg-gray-900/80 backdrop-blur-sm text-[#E74C3C] border border-[#E74C3C]/30 px-3 py-1 rounded-full text-xs font-semibold">
                     {project.category}
                   </span>
                 </div>
