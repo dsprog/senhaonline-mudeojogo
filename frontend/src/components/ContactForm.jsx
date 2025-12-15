@@ -8,7 +8,6 @@ import { mockSubmitForm } from '../mock';
 import { toast } from './ui/sonner';
 
 export const ContactForm = () => {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     nome: '',
