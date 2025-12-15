@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -50,24 +50,32 @@ export const ContactForm = () => {
   };
 
   return (
-    <section id="contact-form" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="container mx-auto max-w-4xl">
+    <section id="contact-form" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(231, 76, 60, 0.3) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+
+      <div className="container mx-auto max-w-4xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12 space-y-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Agende sua <span className="text-[#E74C3C]">Consultoria Gratuita</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white">
+            Agende sua <span className="bg-gradient-to-r from-[#E74C3C] to-[#FF6B6B] bg-clip-text text-transparent">Consultoria Gratuita</span>
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
             Preencha estes dados e faremos um agendamento gratuito para um call de uma hora já dando ideias do que você precisa fazer em marketing para sua empresa
           </p>
         </div>
 
         {/* Form Card */}
-        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 sm:p-10 shadow-2xl border border-gray-700/50">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Nome */}
             <div className="space-y-2">
-              <Label htmlFor="nome" className="text-gray-700 font-medium">
+              <Label htmlFor="nome" className="text-gray-300 font-medium text-sm">
                 Nome Completo *
               </Label>
               <Input
@@ -78,14 +86,14 @@ export const ContactForm = () => {
                 value={formData.nome}
                 onChange={handleChange}
                 placeholder="Seu nome"
-                className="w-full border-gray-300 focus:border-[#E74C3C] focus:ring-[#E74C3C]"
+                className="w-full bg-gray-900/50 border-gray-700 focus:border-[#E74C3C] focus:ring-[#E74C3C] text-white placeholder:text-gray-500"
               />
             </div>
 
             {/* Email and Telefone - Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-gray-700 font-medium">
+                <Label htmlFor="email" className="text-gray-300 font-medium text-sm">
                   E-mail *
                 </Label>
                 <Input
@@ -96,12 +104,12 @@ export const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="seu@email.com"
-                  className="w-full border-gray-300 focus:border-[#E74C3C] focus:ring-[#E74C3C]"
+                  className="w-full bg-gray-900/50 border-gray-700 focus:border-[#E74C3C] focus:ring-[#E74C3C] text-white placeholder:text-gray-500"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="telefone" className="text-gray-700 font-medium">
+                <Label htmlFor="telefone" className="text-gray-300 font-medium text-sm">
                   Telefone/WhatsApp *
                 </Label>
                 <Input
@@ -112,14 +120,14 @@ export const ContactForm = () => {
                   value={formData.telefone}
                   onChange={handleChange}
                   placeholder="(00) 00000-0000"
-                  className="w-full border-gray-300 focus:border-[#E74C3C] focus:ring-[#E74C3C]"
+                  className="w-full bg-gray-900/50 border-gray-700 focus:border-[#E74C3C] focus:ring-[#E74C3C] text-white placeholder:text-gray-500"
                 />
               </div>
             </div>
 
             {/* Empresa */}
             <div className="space-y-2">
-              <Label htmlFor="empresa" className="text-gray-700 font-medium">
+              <Label htmlFor="empresa" className="text-gray-300 font-medium text-sm">
                 Empresa *
               </Label>
               <Input
@@ -130,13 +138,13 @@ export const ContactForm = () => {
                 value={formData.empresa}
                 onChange={handleChange}
                 placeholder="Nome da sua empresa"
-                className="w-full border-gray-300 focus:border-[#E74C3C] focus:ring-[#E74C3C]"
+                className="w-full bg-gray-900/50 border-gray-700 focus:border-[#E74C3C] focus:ring-[#E74C3C] text-white placeholder:text-gray-500"
               />
             </div>
 
             {/* Mensagem */}
             <div className="space-y-2">
-              <Label htmlFor="mensagem" className="text-gray-700 font-medium">
+              <Label htmlFor="mensagem" className="text-gray-300 font-medium text-sm">
                 Mensagem
               </Label>
               <Textarea
@@ -145,8 +153,8 @@ export const ContactForm = () => {
                 value={formData.mensagem}
                 onChange={handleChange}
                 placeholder="Conte-nos um pouco sobre suas necessidades e objetivos..."
-                rows={4}
-                className="w-full border-gray-300 focus:border-[#E74C3C] focus:ring-[#E74C3C] resize-none"
+                rows={5}
+                className="w-full bg-gray-900/50 border-gray-700 focus:border-[#E74C3C] focus:ring-[#E74C3C] text-white placeholder:text-gray-500 resize-none"
               />
             </div>
 
@@ -154,7 +162,7 @@ export const ContactForm = () => {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#E74C3C] hover:bg-[#C0392B] text-white py-6 text-lg font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50"
+              className="w-full bg-gradient-to-r from-[#E74C3C] to-[#C0392B] hover:from-[#C0392B] hover:to-[#A93226] text-white py-6 text-lg font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-[#E74C3C]/50 disabled:opacity-50 hover:scale-[1.02]"
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center gap-2">
