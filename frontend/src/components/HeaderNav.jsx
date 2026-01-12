@@ -102,9 +102,9 @@ export const HeaderNav = () => {
                 href="https://twitter.com/senhaonline"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#E74C3C] transition-colors"
+                className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
               >
-                <X className="w-4 h-4" />
+                <Twitter className="w-4 h-4" />
               </a>
             </div>
 
