@@ -9,7 +9,6 @@ import { PortfolioWhatsApp } from "./components/PortfolioWhatsApp";
 import { CTASection } from "./components/CTASection";
 import { ContactWhatsApp } from "./components/ContactWhatsApp";
 import { FooterWhatsApp } from "./components/FooterWhatsApp";
-import { WhatsAppButton } from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <ContactWhatsApp />
       </main>
       <FooterWhatsApp />
-      <WhatsAppButton />
       <Toaster />
     </div>
   );
