@@ -17,18 +17,15 @@ export const HeroWhatsApp = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-40"
-        >
-          <source src="https://cdn.pixabay.com/video/2021/08/04/84013-584020347_large.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/60"></div>
+      {/* Video/Image Background */}
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
+        <img
+          src="https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/5sjtalsc_AdobeStock_288456527.jpeg"
+          alt="Background"
+          className="w-full h-full object-cover opacity-30 animate-spin-slow"
+          style={{ animationDuration: '60s' }}
+        />
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Content */}
