@@ -11,7 +11,7 @@ export const PortfolioWhatsApp = () => {
           <h2 className="text-4xl font-bold text-white">
             <span className="text-[#E74C3C]">Portfólio</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             Projetos que transformaram marcas e geraram resultados reais
           </p>
         </div>
