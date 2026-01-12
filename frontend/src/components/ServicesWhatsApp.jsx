@@ -13,7 +13,8 @@ const iconMap = {
 
 export const ServicesWhatsApp = () => {
   return (
-    <section id="services-section" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">\n      <div className="container mx-auto max-w-7xl">
+    <section id="services-section" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl font-bold text-gray-900">
