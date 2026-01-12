@@ -35,12 +35,12 @@ export const ServicesWhatsApp = () => {
                 className="group bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-[#DC143C]/40 hover:shadow-xl hover:shadow-[#DC143C]/10 transition-all duration-300 fade-in-up"
               >
                 {/* Icon */}
-                <div className="w-14 h-14 bg-[#E74C3C]/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#E74C3C] group-hover:scale-110 transition-all duration-300">
-                  <IconComponent className="w-7 h-7 text-[#E74C3C] group-hover:text-white transition-colors duration-300" />
+                <div className="w-14 h-14 bg-[#DC143C]/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#DC143C] group-hover:scale-110 transition-all duration-300">
+                  <IconComponent className="w-7 h-7 text-[#DC143C] group-hover:text-white transition-colors duration-300" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#E74C3C] transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#DC143C] transition-colors duration-300">
                   {service.title}
                 </h3>
 
