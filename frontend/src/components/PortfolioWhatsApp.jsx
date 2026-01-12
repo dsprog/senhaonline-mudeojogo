@@ -24,7 +24,7 @@ export const PortfolioWhatsApp = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300"
+              className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-800"
             >
               {/* Image */}
               <div className="relative h-56 overflow-hidden">
