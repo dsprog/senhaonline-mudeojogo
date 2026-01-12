@@ -16,7 +16,7 @@ export const WhyChooseSection = () => {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl font-bold text-white fade-in-up">
-            Por Que Escolher a <span className="text-[#E74C3C]">Senha?</span>
+            Por Que Escolher a <span className="text-[#DC143C]">Senha?</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto fade-in-up">
             Somos especialistas em transformar empresas com soluções 360° de comunicação e marketing digital
