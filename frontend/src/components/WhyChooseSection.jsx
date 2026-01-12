@@ -32,8 +32,8 @@ export const WhyChooseSection = () => {
                 key={item.id}
                 className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 text-center border border-gray-800 fade-in-up"
               >
-                <div className="w-16 h-16 bg-[#E74C3C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-8 h-8 text-[#E74C3C]" />
+                <div className="w-16 h-16 bg-[#DC143C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="w-8 h-8 text-[#DC143C]" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
