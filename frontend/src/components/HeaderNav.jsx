@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
 import { contactInfo } from '../data/whatsapp-lead-data';
 
-const SENHA_LOGO = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/4k29x1d5_Gemini_Generated_Image_dc99uhdc99uhdc99.png";
+const SENHA_LOGO = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/bny36gyg_logo%20senha.png";
 
 export const HeaderNav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +37,7 @@ export const HeaderNav = () => {
             <img 
               src={SENHA_LOGO}
               alt="Senha Comunicação" 
-              className="h-12 w-auto cursor-pointer"
+              className="h-16 w-auto cursor-pointer"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
           </div>
@@ -91,7 +91,7 @@ export const HeaderNav = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/company/senha-comunica%C3%A7%C3%A3o/"
+                href="https://www.linkedin.com/company/senha-comunicação/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-[#E74C3C] transition-colors"
@@ -99,7 +99,9 @@ export const HeaderNav = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="#"
+                href="https://twitter.com/senhaonline"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-[#E74C3C] transition-colors"
               >
                 <X className="w-5 h-5" />
