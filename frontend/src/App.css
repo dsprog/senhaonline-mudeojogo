@@ -72,16 +72,19 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
-/* Slow spin animation for hero background */
-@keyframes spin-slow {
+/* Fade in animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animate-spin-slow {
-  animation: spin-slow 60s linear infinite;
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
 }
