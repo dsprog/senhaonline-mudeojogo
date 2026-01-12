@@ -111,7 +111,7 @@ export const HeaderNav = () => {
             {/* CTA Button - VERMELHO */}
             <button
               onClick={handleWhatsApp}
-              className="bg-[#E74C3C] hover:bg-[#C0392B] text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 text-sm"
+              className="bg-gradient-to-r from-[#DC143C] to-[#B91230] hover:from-[#B91230] hover:to-[#8B0000] text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 text-sm shadow-lg shadow-[#DC143C]/20"
             >
               Fale Conosco
             </button>
