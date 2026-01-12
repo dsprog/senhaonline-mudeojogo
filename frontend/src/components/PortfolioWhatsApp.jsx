@@ -26,14 +26,14 @@ export const PortfolioWhatsApp = () => {
               rel="noopener noreferrer"
               className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-800"
             >
-              {/* Image */}
+              {/* Image - MAIS ESCURA */}
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 grayscale group-hover:grayscale-0"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 grayscale group-hover:grayscale-0 brightness-50 group-hover:brightness-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/0 transition-all duration-500"></div>
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
