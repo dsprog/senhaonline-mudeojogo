@@ -45,7 +45,7 @@ export const ServicesWhatsApp = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 mb-5 leading-relaxed">
+                <p className="text-gray-400 mb-5 leading-relaxed">
                   {service.description}
                 </p>
 
