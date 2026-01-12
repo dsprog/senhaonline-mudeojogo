@@ -32,7 +32,7 @@ export const ServicesWhatsApp = () => {
             return (
               <div
                 key={service.id}
-                className="group bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-[#E74C3C] hover:shadow-xl transition-all duration-300"
+                className="group bg-gray-900 border-2 border-gray-800 rounded-2xl p-8 hover:border-[#E74C3C] hover:shadow-xl transition-all duration-300"
               >
                 {/* Icon */}
                 <div className="w-14 h-14 bg-[#E74C3C]/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#E74C3C] group-hover:scale-110 transition-all duration-300">
