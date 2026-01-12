@@ -62,7 +62,7 @@ export const PortfolioWhatsApp = () => {
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+                      className="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs font-medium border border-gray-700"
                     >
                       {tag}
                     </span>
