@@ -13,30 +13,33 @@ import { Toaster } from "./components/ui/sonner";
 
 function App() {
   useEffect(() => {
-    // Scroll animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+    // Animações ao scroll
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      
+      elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight * 0.85;
+        
+        if (isVisible) {
+          element.style.opacity = '1';
+          element.style.transform = 'translateY(0)';
         }
       });
-    }, observerOptions);
+    };
 
-    // Observe all scroll-animate elements
-    document.querySelectorAll('.scroll-animate').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(50px)';
-      el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
-      observer.observe(el);
+    // Inicializar elementos
+    const elements = document.querySelectorAll('.fade-in-up');
+    elements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(60px)';
+      element.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
     });
 
-    return () => observer.disconnect();
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Executar uma vez no início
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
