@@ -8,7 +8,7 @@ export const PortfolioWhatsApp = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl font-bold text-white scroll-animate">
+          <h2 className="text-4xl font-bold text-white fade-in-up">
             <span className="bg-gradient-to-r from-[#DC143C] to-[#FF4444] bg-clip-text text-transparent">Portfólio</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
@@ -24,7 +24,7 @@ export const PortfolioWhatsApp = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-[#DC143C]/20 transition-all duration-300 border border-gray-800 hover:border-[#DC143C]/60 scroll-animate"
+              className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-[#DC143C]/20 transition-all duration-300 border border-gray-800 hover:border-[#DC143C]/60 fade-in-up"
             >
               {/* Image - MAIS ESCURA + HOVER AVERMELHADO */}
               <div className="relative h-56 overflow-hidden">
@@ -57,12 +57,12 @@ export const PortfolioWhatsApp = () => {
                   {project.description}
                 </p>
 
-                {/* Tags */}
+                {/* Tags - VERMELHAS COM CONTORNO VERMELHO */}
                 <div className="flex flex-wrap gap-2 pt-2">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs font-medium border border-gray-700"
+                      className="bg-[#DC143C]/10 text-[#DC143C] px-2 py-1 rounded text-xs font-medium border border-[#DC143C]/40"
                     >
                       {tag}
                     </span>

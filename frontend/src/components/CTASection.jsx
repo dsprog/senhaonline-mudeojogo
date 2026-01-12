@@ -16,9 +16,16 @@ export const CTASection = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#E74C3C] to-[#C0392B]">
-      <div className="container mx-auto max-w-4xl text-center">
-        <div className="space-y-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#8B0000] via-[#A0001C] to-[#8B0000] relative overflow-hidden">
+      {/* Efeito metalizado */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(255,255,255,0.3) 0%, transparent 50%)'
+        }}></div>
+      </div>
+
+      <div className="container mx-auto max-w-4xl text-center relative z-10">
+        <div className="space-y-8 fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Pronto para Transformar Seu Negócio?
           </h2>
@@ -30,7 +37,7 @@ export const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={scrollToForm}
-              className="inline-flex items-center gap-2 bg-white text-[#E74C3C] hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="inline-flex items-center gap-2 bg-white text-[#8B0000] hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               Solicitar Proposta Gratuita
               <ArrowRight className="w-5 h-5" />
