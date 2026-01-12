@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { HeaderNav } from "./components/HeaderNav";
 import { HeroWhatsApp } from "./components/HeroWhatsApp";
 import { AboutSection } from "./components/AboutSection";
 import { WhyChooseSection } from "./components/WhyChooseSection";
