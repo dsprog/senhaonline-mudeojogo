@@ -115,7 +115,7 @@ export const ContactWhatsApp = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-black border-gray-700 text-white"
+                  className="w-full bg-black border-gray-700 text-white hover:border-[#DC143C] focus:border-[#DC143C] focus:ring-[#DC143C] transition-colors"
                 />
               </div>
 
@@ -128,7 +128,7 @@ export const ContactWhatsApp = () => {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full bg-black border-gray-700 text-white"
+                  className="w-full bg-black border-gray-700 text-white hover:border-[#DC143C] focus:border-[#DC143C] focus:ring-[#DC143C] transition-colors"
                 />
               </div>
 
@@ -141,7 +141,7 @@ export const ContactWhatsApp = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-black border-gray-700 text-white"
+                  className="w-full bg-black border-gray-700 text-white hover:border-[#DC143C] focus:border-[#DC143C] focus:ring-[#DC143C] transition-colors"
                 />
               </div>
 
@@ -155,7 +155,7 @@ export const ContactWhatsApp = () => {
                   value={formData.whatsapp}
                   onChange={handleChange}
                   placeholder="(00) 00000-0000"
-                  className="w-full bg-black border-gray-700 text-white"
+                  className="w-full bg-black border-gray-700 text-white hover:border-[#DC143C] focus:border-[#DC143C] focus:ring-[#DC143C] transition-colors"
                 />
               </div>
 
@@ -168,7 +168,7 @@ export const ContactWhatsApp = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full resize-none bg-black border-gray-700 text-white"
+                  className="w-full resize-none bg-black border-gray-700 text-white hover:border-[#DC143C] focus:border-[#DC143C] focus:ring-[#DC143C] transition-colors"
                 />
               </div>
 
