@@ -13,12 +13,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .App {
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* Custom scrollbar */
@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,7 +39,7 @@ body {
   background: #C0392B;
 }
 
-/* Smooth transitions for interactive elements */
+/* Smooth transitions */
 button,
 a,
 input,
@@ -56,31 +56,6 @@ input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid #E74C3C;
   outline-offset: 2px;
-}
-
-/* Animation utilities */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
 }
 
 /* Selection color */
