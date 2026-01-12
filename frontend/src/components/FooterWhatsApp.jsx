@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Facebook, Instagram, Linkedin, X } from 'lucide-react';
+import { MessageCircle, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { contactInfo } from '../data/whatsapp-lead-data';
 
 const SENHA_LOGO_SP = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/bny36gyg_logo%20senha.png";
@@ -11,7 +11,7 @@ export const FooterWhatsApp = () => {
   return (
     <footer className="bg-black text-white">
       {/* WhatsApp CTA Section */}
-      <div className="border-t border-b border-gray-800 py-16">
+      <div className="border-t border-gray-800 py-16">
         <div className="container mx-auto px-6 text-center space-y-6">
           <h3 className="text-3xl font-bold text-white">
             Fale Conosco no WhatsApp
@@ -28,8 +28,8 @@ export const FooterWhatsApp = () => {
         </div>
       </div>
 
-      {/* Main Footer */}
-      <div className="py-8">
+      {/* Main Footer - BORDA EM CIMA E EMBAIXO */}
+      <div className="border-t border-b border-gray-800 py-8">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center space-y-6">
             {/* Logo */}
@@ -39,13 +39,13 @@ export const FooterWhatsApp = () => {
               className="h-12 w-auto"
             />
 
-            {/* Social Media - ÍCONES CIRCULARES */}
+            {/* Social Media - ÍCONES CIRCULARES COM TWITTER */}
             <div className="flex gap-3">
               <a
                 href="https://www.facebook.com/Senhaonline?fref=ts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#E74C3C] transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -54,7 +54,7 @@ export const FooterWhatsApp = () => {
                 href="https://www.instagram.com/senhaonline/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#E74C3C] transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -63,7 +63,7 @@ export const FooterWhatsApp = () => {
                 href="https://www.linkedin.com/company/senha-comunicação/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#E74C3C] transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -72,10 +72,10 @@ export const FooterWhatsApp = () => {
                 href="https://twitter.com/senhaonline"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#E74C3C] transition-colors"
-                aria-label="X"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
+                aria-label="Twitter"
               >
-                <X className="w-5 h-5" />
+                <Twitter className="w-5 h-5" />
               </a>
             </div>
 
