@@ -53,7 +53,7 @@ export const ServicesWhatsApp = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm text-gray-300">
-                      <Check className="w-4 h-4 text-[#E74C3C] mt-0.5 flex-shrink-0" />
+                      <Check className="w-4 h-4 text-[#DC143C] mt-0.5 flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
