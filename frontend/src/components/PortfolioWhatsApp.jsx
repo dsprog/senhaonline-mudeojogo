@@ -8,8 +8,8 @@ export const PortfolioWhatsApp = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl font-bold text-white">
-            <span className="text-[#E74C3C]">Portfólio</span>
+          <h2 className="text-4xl font-bold text-white scroll-animate">
+            <span className="bg-gradient-to-r from-[#DC143C] to-[#FF4444] bg-clip-text text-transparent">Portfólio</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             Projetos que transformaram marcas e geraram resultados reais
@@ -24,16 +24,16 @@ export const PortfolioWhatsApp = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-800"
+              className="group block bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-[#DC143C]/20 transition-all duration-300 border border-gray-800 hover:border-[#DC143C]/60 scroll-animate"
             >
-              {/* Image - MAIS ESCURA */}
+              {/* Image - MAIS ESCURA + HOVER AVERMELHADO */}
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 grayscale group-hover:grayscale-0 brightness-50 group-hover:brightness-100"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 grayscale group-hover:grayscale-0 brightness-40 group-hover:brightness-100"
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/0 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-[#DC143C]/20 transition-all duration-500"></div>
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
@@ -49,8 +49,8 @@ export const PortfolioWhatsApp = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6 space-y-3">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#E74C3C] transition-colors duration-300">
+              <div className="p-6 space-y-3 group-hover:bg-gray-800/50 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#DC143C] transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
@@ -71,7 +71,7 @@ export const PortfolioWhatsApp = () => {
 
                 {/* Link */}
                 <div className="pt-2">
-                  <span className="text-[#E74C3C] text-sm font-semibold group-hover:underline">
+                  <span className="text-[#DC143C] text-sm font-semibold group-hover:underline">
                     Ver Projeto →
                   </span>
                 </div>
