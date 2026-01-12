@@ -134,7 +134,7 @@ export const portfolio = [
     category: 'Construção',
     description: 'Branding e estratégia de comunicação com foco em cultura de valor e propósito',
     tags: ['Branding', 'Estratégia', 'Propósito'],
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/3p6wpbq0_ESCAD.jpeg',
     link: 'https://senhaonline.com.br/portfolio/rebranding-institucional-escad-rental/'
   },
   {
@@ -179,7 +179,7 @@ export const portfolio = [
     category: 'Indústria',
     description: 'Rebranding e estratégia de comunicação industrial',
     tags: ['Rebranding', 'B2B', 'Industrial'],
-    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/i3h96h5s_SUCATA.jpeg',
     link: 'https://www.portalbrasfer.com.br/'
   },
   {
@@ -188,7 +188,7 @@ export const portfolio = [
     category: 'Saúde',
     description: 'Marketing digital e presença online',
     tags: ['Digital', 'Website', 'Social Media'],
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/bbl4zx9k_BIOCENTER.jpeg',
     link: 'https://biocenterlaboratorios.com.br/'
   },
   {
@@ -197,7 +197,7 @@ export const portfolio = [
     category: 'Saúde',
     description: 'Campanhas e comunicação visual',
     tags: ['Branding', 'Comunicação', 'Saúde'],
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/2rkirpev_CINCOR.jpeg',
     link: 'https://cincoramericana.com.br/'
   }
 ];
