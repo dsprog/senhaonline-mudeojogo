@@ -4,8 +4,7 @@ import { portfolio } from '../data/whatsapp-lead-data';
 
 export const PortfolioWhatsApp = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="container mx-auto max-w-7xl">
+    <section id="portfolio-section" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">\n      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl font-bold text-gray-900">
