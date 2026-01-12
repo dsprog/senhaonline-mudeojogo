@@ -40,7 +40,7 @@ export const ServicesWhatsApp = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#E74C3C] transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#E74C3C] transition-colors duration-300">
                   {service.title}
                 </h3>
 
