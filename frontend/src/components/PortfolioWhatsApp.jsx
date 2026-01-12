@@ -50,7 +50,7 @@ export const PortfolioWhatsApp = () => {
 
               {/* Content */}
               <div className="p-6 space-y-3">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#E74C3C] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#E74C3C] transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
