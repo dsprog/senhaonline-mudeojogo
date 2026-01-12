@@ -72,18 +72,18 @@ export const HeroWhatsApp = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto mt-28">
+        {/* Stats - NA MESMA LINHA */}
+        <div className="flex flex-wrap justify-center gap-x-16 gap-y-6 max-w-4xl mx-auto mt-24">
           {companyStats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl lg:text-6xl font-bold text-[#E74C3C] mb-3">{stat.number}</div>
-              <div className="text-sm uppercase tracking-wider text-gray-400 font-medium">{stat.label}</div>
+              <div className="text-5xl font-bold text-[#E74C3C] mb-2">{stat.number}</div>
+              <div className="text-xs uppercase tracking-wider text-gray-400 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>
 
         {/* PDF Download */}
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <a
             href={contactInfo.pdfLink}
             download
