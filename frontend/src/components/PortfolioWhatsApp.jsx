@@ -8,7 +8,7 @@ export const PortfolioWhatsApp = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl font-bold text-white">
             <span className="text-[#E74C3C]">Portfólio</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
