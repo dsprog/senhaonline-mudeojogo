@@ -31,12 +31,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E74C3C;
+  background: #DC143C;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #C0392B;
+  background: #B91230;
 }
 
 /* Smooth transitions */
@@ -54,13 +54,13 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #E74C3C;
+  outline: 2px solid #DC143C;
   outline-offset: 2px;
 }
 
 /* Selection color */
 ::selection {
-  background-color: #E74C3C;
+  background-color: #DC143C;
   color: white;
 }
 
@@ -72,11 +72,11 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
-/* Fade in animation */
-@keyframes fadeIn {
+/* Scroll animations */
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -84,7 +84,19 @@ textarea:focus-visible {
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
+.scroll-animate {
   opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scroll-animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.scroll-animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.scroll-animate-delay-3 {
+  animation-delay: 0.3s;
 }
