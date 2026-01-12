@@ -18,6 +18,7 @@ const LOGO_URL = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-48
 function App() {
   return (
     <div className="App">
+      <HeaderNav />
       <main>
         <HeroWhatsApp />
         <AboutSection />
