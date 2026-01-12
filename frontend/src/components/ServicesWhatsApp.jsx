@@ -17,10 +17,10 @@ export const ServicesWhatsApp = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl font-bold text-white">
-            Nossos <span className="text-[#E74C3C]">Serviços</span>
+          <h2 className="text-4xl font-bold text-white fade-in-up">
+            Nossos <span className="text-[#DC143C]">Serviços</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto fade-in-up">
             Soluções completas de comunicação e marketing para alavancar seu negócio
           </p>
         </div>
@@ -32,7 +32,7 @@ export const ServicesWhatsApp = () => {
             return (
               <div
                 key={service.id}
-                className="group bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-[#E74C3C]/40 hover:shadow-xl hover:shadow-[#E74C3C]/10 transition-all duration-300"
+                className="group bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-[#DC143C]/40 hover:shadow-xl hover:shadow-[#DC143C]/10 transition-all duration-300 fade-in-up"
               >
                 {/* Icon */}
                 <div className="w-14 h-14 bg-[#E74C3C]/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#E74C3C] group-hover:scale-110 transition-all duration-300">
