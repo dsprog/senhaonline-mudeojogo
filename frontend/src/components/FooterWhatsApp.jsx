@@ -9,7 +9,7 @@ export const FooterWhatsApp = () => {
   const whatsappLink = `https://wa.me/${contactInfo.phoneLink}?text=${whatsappMessage}`;
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white relative z-20">
       {/* WhatsApp CTA Section - SEM BORDA EM CIMA */}
       <div className="py-16 border-b border-gray-800">
         <div className="container mx-auto px-6 text-center space-y-6">
