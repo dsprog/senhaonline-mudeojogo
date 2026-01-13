@@ -16,18 +16,26 @@ export const HeroWhatsApp = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Video Background - RODANDO */}
+    <section className="relative pt-32 pb-20 overflow-hidden bg-black">
+      {/* Video Background - como no original */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-15"
+          preload="metadata"
+          className="w-full h-full object-cover"
+          style={{
+            opacity: 0.6,
+            filter: 'grayscale(50%) brightness(0.8)',
+            mixBlendMode: 'normal'
+          }}
         >
-          <source src="https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/dpfqpqrx_WhatsApp%20Video%202025-11-27%20at%2009.20.11.mp4" type="video/mp4" />
+          <source src="https://customer-assets.emergentagent.com/job_whatsapp-lead-form/artifacts/2wydbsnh_WhatsApp%20Video%202025-11-27%20at%2009.20.11.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
         </video>
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
       </div>
 
       {/* Content */}
