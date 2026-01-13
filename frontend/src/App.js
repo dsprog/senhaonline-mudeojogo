@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./App.css";
 import { HeaderNav } from "./components/HeaderNav";
 import { HeroWhatsApp } from "./components/HeroWhatsApp";
+import { DownloadSection } from "./components/DownloadSection";
 import { AboutSection } from "./components/AboutSection";
 import { WhyChooseSection } from "./components/WhyChooseSection";
 import { ServicesWhatsApp } from "./components/ServicesWhatsApp";
@@ -81,6 +82,7 @@ function App() {
       <HeaderNav />
       <main className="relative z-10">
         <HeroWhatsApp />
+        <DownloadSection />
         <AboutSection />
         <WhyChooseSection />
         <ServicesWhatsApp />
