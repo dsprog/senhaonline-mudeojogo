@@ -130,7 +130,7 @@ export const portfolio = [
   },
   {
     id: 3,
-    title: 'ESCAD Construtora',
+    title: 'ESCAD RENTAL',
     category: 'Construção',
     description: 'Branding e estratégia de comunicação com foco em cultura de valor e propósito',
     tags: ['Branding', 'Estratégia', 'Propósito'],
