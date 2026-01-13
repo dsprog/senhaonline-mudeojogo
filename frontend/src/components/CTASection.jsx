@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageSquare } from 'lucide-react';
 import { contactInfo } from '../data/whatsapp-lead-data';
+import { Button } from './ui/button';
 
 export const CTASection = () => {
   const handleWhatsApp = () => {
@@ -16,39 +17,47 @@ export const CTASection = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#8B0000] via-[#A0001C] to-[#8B0000] relative overflow-hidden">
-      {/* Efeito metalizado */}
+    <section className="py-20 bg-gradient-to-br from-red-900 via-red-700 to-red-900 text-white relative overflow-hidden">
+      {/* Background pattern */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(255,255,255,0.3) 0%, transparent 50%)'
-        }}></div>
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}
+        />
       </div>
+      
+      {/* Glow effects */}
+      <div className="absolute top-10 right-10 w-72 h-72 bg-red-500/30 rounded-full blur-[100px]" />
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-red-500/30 rounded-full blur-[100px]" />
 
-      <div className="container mx-auto max-w-4xl text-center relative z-10">
-        <div className="space-y-8 fade-in-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
             Pronto para Transformar Seu Negócio?
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl mb-10 text-red-50">
             Vamos conversar sobre como podemos ajudar sua empresa a alcançar resultados excepcionais
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
               onClick={scrollToForm}
-              className="inline-flex items-center gap-2 bg-white text-[#8B0000] hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="bg-white text-red-600 hover:bg-gray-100 px-8 py-6 text-lg group shadow-2xl"
             >
               Solicitar Proposta Gratuita
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <button
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button
               onClick={handleWhatsApp}
-              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-red-700 px-8 py-6 text-lg transition-all"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageSquare className="mr-2 h-5 w-5" />
               WhatsApp
-            </button>
+            </Button>
           </div>
         </div>
       </div>
