@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { contactInfo } from '../data/whatsapp-lead-data';
 
-const SENHA_LOGO_SP = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/bny36gyg_logo%20senha.png";
+const SENHA_LOGO = "https://customer-assets.emergentagent.com/job_f2b18a42-25f4-4837-bb60-b0e2886cc8b3/artifacts/bny36gyg_logo%20senha.png";
 
 export const FooterWhatsApp = () => {
   const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber mais sobre os serviços da Senha Comunicação.');
@@ -10,8 +10,8 @@ export const FooterWhatsApp = () => {
 
   return (
     <footer className="bg-black text-white">
-      {/* WhatsApp CTA Section */}
-      <div className="border-t border-gray-800 py-16">
+      {/* WhatsApp CTA Section - SEM BORDA EM CIMA */}
+      <div className="py-16 border-b border-gray-800">
         <div className="container mx-auto px-6 text-center space-y-6">
           <h3 className="text-3xl font-bold text-white">
             Fale Conosco no WhatsApp
@@ -28,24 +28,24 @@ export const FooterWhatsApp = () => {
         </div>
       </div>
 
-      {/* Main Footer - BORDA EM CIMA E EMBAIXO */}
-      <div className="border-t border-b border-gray-800 py-8">
+      {/* Main Footer - SÓ LOGO + REDES SOCIAIS + COPYRIGHT + BADGE */}
+      <div className="py-12">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center space-y-8">
             {/* Logo */}
             <img 
-              src={SENHA_LOGO_SP} 
+              src={SENHA_LOGO} 
               alt="Senha Comunicação" 
               className="h-12 w-auto"
             />
 
-            {/* Social Media - ÍCONES CIRCULARES COM TWITTER */}
-            <div className="flex gap-3">
+            {/* Social Media - 4 ÍCONES CIRCULARES */}
+            <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/Senhaonline?fref=ts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -54,7 +54,7 @@ export const FooterWhatsApp = () => {
                 href="https://www.instagram.com/senhaonline/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -63,7 +63,7 @@ export const FooterWhatsApp = () => {
                 href="https://www.linkedin.com/company/senha-comunicação/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -72,7 +72,7 @@ export const FooterWhatsApp = () => {
                 href="https://twitter.com/senhaonline"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#DC143C] transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -94,7 +94,7 @@ export const FooterWhatsApp = () => {
               <img 
                 src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4"
                 alt="Emergent"
-                className="w-4 h-4 rounded-full"
+                className="w-5 h-5 rounded-full"
               />
               Made with Emergent
             </a>
