@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageCircle, FileDown } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 import { companyStats, contactInfo } from '../data/whatsapp-lead-data';
 
 export const HeroWhatsApp = () => {
@@ -39,66 +39,72 @@ export const HeroWhatsApp = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10 py-40">
-        <div className="max-w-5xl mx-auto text-center space-y-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Badge - VERMELHO METALIZADO */}
-          <div className="inline-block scroll-animate">
-            <span className="bg-gradient-to-r from-[#8B0000] to-[#DC143C] border border-[#DC143C] text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg shadow-[#DC143C]/20">
-              30 ANOS TRANSFORMANDO MARCAS
+          <div className="inline-block mb-6 px-6 py-3 bg-red-600/20 border border-red-500/40 rounded-full backdrop-blur-md observe-fade shadow-2xl animate-fade-in-up">
+            <span className="text-red-500 font-bold text-sm tracking-widest uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              30 Anos Transformando Marcas
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight scroll-animate scroll-animate-delay-1">
+          <h1 
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight observe-fade animate-fade-in-up"
+            style={{ 
+              animationDelay: '0.2s',
+              textShadow: '0 4px 20px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)'
+            }}
+          >
             Marketing Digital de
-            <span className="block bg-gradient-to-r from-[#DC143C] to-[#FF4444] bg-clip-text text-transparent mt-2">Resultado</span>
+            <span 
+              className="block text-red-600 mt-2"
+              style={{ textShadow: '0 0 30px rgba(220,38,38,0.9), 0 4px 20px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)' }}
+            >
+              Resultado
+            </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl sm:text-2xl text-white leading-relaxed max-w-4xl mx-auto scroll-animate scroll-animate-delay-2">
-            Comunicação de respeito para o crescimento da sua empresa.<br />
-            Transformamos sua presença digital com estratégias que <strong>geram resultados reais</strong>.
+          <p 
+            className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto leading-relaxed observe-fade font-medium animate-fade-in-up"
+            style={{ 
+              animationDelay: '0.4s',
+              textShadow: '0 4px 20px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)'
+            }}
+          >
+            Comunicação de respeito para o crescimento da sua empresa. Transformamos sua presença digital com estratégias que <strong className="text-white font-bold">geram resultados reais</strong>.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-6 scroll-animate scroll-animate-delay-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center observe-fade animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <button
               onClick={scrollToForm}
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#DC143C] to-[#B91230] hover:from-[#B91230] hover:to-[#8B0000] text-white px-10 py-4 rounded-lg font-bold transition-all duration-300 text-lg shadow-lg shadow-[#DC143C]/30"
+              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-md font-medium shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] transition-all group"
             >
               Solicitar Proposta
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={handleWhatsApp}
-              className="inline-flex items-center gap-3 bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-10 py-4 rounded-lg font-bold transition-all duration-300 text-lg"
+              className="inline-flex items-center gap-2 border-2 border-red-500/30 hover:border-red-500 text-gray-200 hover:text-white px-8 py-6 text-lg rounded-md font-medium hover:bg-red-600/10 backdrop-blur-sm transition-all"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="mr-2 h-5 w-5" />
               Falar no WhatsApp
             </button>
           </div>
-        </div>
 
-        {/* Stats - NA MESMA LINHA */}
-        <div className="flex flex-wrap justify-center gap-x-20 gap-y-6 max-w-5xl mx-auto mt-28">
-          {companyStats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4444] bg-clip-text text-transparent mb-2">{stat.number}</div>
-              <div className="text-xs uppercase tracking-wider text-gray-500 font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* PDF Download */}
-        <div className="mt-12 text-center">
-          <a
-            href={contactInfo.pdfLink}
-            download
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#DC143C] to-[#B91230] hover:from-[#B91230] hover:to-[#8B0000] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg shadow-[#DC143C]/30"
-          >
-            <FileDown className="w-5 h-5" />
-            Faça o Download de nossa Apresentação 2026
-          </a>
+          {/* Stats - NA MESMA LINHA */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-3xl mx-auto observe-fade animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+            {companyStats.map((stat, index) => (
+              <div key={index} className="text-center group">
+                <div className="text-3xl md:text-4xl font-bold text-red-500 mb-1 group-hover:text-red-400 group-hover:scale-110 transition-all drop-shadow-[0_0_20px_rgba(220,38,38,0.5)]">
+                  {stat.number}
+                </div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
