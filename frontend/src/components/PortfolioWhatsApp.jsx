@@ -28,7 +28,7 @@ export const PortfolioWhatsApp = () => {
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {portfolio.slice(0, 6).map((project, index) => (
+          {portfolio.slice(0, 9).map((project, index) => (
             <a
               key={project.id}
               href={project.link}
