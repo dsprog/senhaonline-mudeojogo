@@ -161,7 +161,7 @@ export const portfolio = [
     category: 'Estética e Saúde',
     description: 'Branding e identidade conceitual para clínica de estética',
     tags: ['Branding', 'Identidade', 'Saúde'],
-    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/oz7pbpvv_VIVA.jpg',
+    image: 'https://images.unsplash.com/photo-1595871151608-bc7abd1caca3?w=600&h=400&fit=crop',
     link: 'https://senhaonline.com.br/portfolio/branding-beleza-grega-identidade-conceitual/'
   },
   {
@@ -179,7 +179,7 @@ export const portfolio = [
     category: 'Restaurante & Bar',
     description: 'Branding completo para restaurante e bar',
     tags: ['Branding', 'Restaurante', 'Bar'],
-    image: 'https://images.unsplash.com/photo-1766844649151-f671c0ec206d?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/oz7pbpvv_VIVA.jpg',
     link: 'https://senhaonline.com.br/portfolio/viva-lounge-bar-20190618175805/'
   },
   {
