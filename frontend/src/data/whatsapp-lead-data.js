@@ -143,7 +143,7 @@ export const portfolio = [
     category: 'Eventos',
     description: 'Projeto completo para feira ANDAV SP',
     tags: ['Eventos', 'Feira', 'Stand'],
-    image: 'https://images.unsplash.com/photo-1761195689615-9469b65dac01?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/1uwj4b4p_ALLTERR.jpg',
     link: 'https://senhaonline.com.br/portfolio/projeto-allterra-feira-andav-sp/'
   },
   {
@@ -152,16 +152,16 @@ export const portfolio = [
     category: 'Imobiliário',
     description: 'Branding e gestão Real State',
     tags: ['Branding', 'Imobiliário', 'Consultoria'],
-    image: 'https://images.unsplash.com/photo-1603516437280-22f3049236ed?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/i33s9jk7_EXX.jpg',
     link: 'https://senhaonline.com.br/portfolio/branding-exx-gestao-real-state/'
   },
   {
     id: 6,
-    title: 'BELEZA GREGA',
+    title: 'BELEZA GREGA Saúde e Estética',
     category: 'Estética e Saúde',
     description: 'Branding e identidade conceitual para clínica de estética',
     tags: ['Branding', 'Identidade', 'Saúde'],
-    image: 'https://images.unsplash.com/photo-1595871151608-bc7abd1caca3?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/oz7pbpvv_VIVA.jpg',
     link: 'https://senhaonline.com.br/portfolio/branding-beleza-grega-identidade-conceitual/'
   },
   {
@@ -170,7 +170,7 @@ export const portfolio = [
     category: 'Saúde',
     description: 'Campanha Junho Vermelho - Doação de sangue',
     tags: ['Campanha', 'Social', 'Saúde'],
-    image: 'https://images.unsplash.com/photo-1683791895200-201c0c40310f?w=600&h=400&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_mude-o-jogo/artifacts/alm81acu_BIO.jpg',
     link: 'https://senhaonline.com.br/portfolio/campanha-junho-vermelho-biocenter/'
   },
   {
