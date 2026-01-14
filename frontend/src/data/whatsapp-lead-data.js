@@ -130,7 +130,7 @@ export const portfolio = [
   },
   {
     id: 3,
-    title: 'ESCAD RENTAL',
+    title: 'ESCAD Rental',
     category: 'Construção',
     description: 'Branding e estratégia de comunicação com foco em cultura de valor e propósito',
     tags: ['Branding', 'Estratégia', 'Propósito'],
@@ -139,6 +139,51 @@ export const portfolio = [
   },
   {
     id: 4,
+    title: 'ALLTERRA Feiras e Eventos',
+    category: 'Eventos',
+    description: 'Projeto completo para feira ANDAV SP',
+    tags: ['Eventos', 'Feira', 'Stand'],
+    image: 'https://images.unsplash.com/photo-1761195689615-9469b65dac01?w=600&h=400&fit=crop',
+    link: 'https://senhaonline.com.br/portfolio/projeto-allterra-feira-andav-sp/'
+  },
+  {
+    id: 5,
+    title: 'EXX Consultoria Imobiliária',
+    category: 'Imobiliário',
+    description: 'Branding e gestão Real State',
+    tags: ['Branding', 'Imobiliário', 'Consultoria'],
+    image: 'https://images.unsplash.com/photo-1603516437280-22f3049236ed?w=600&h=400&fit=crop',
+    link: 'https://senhaonline.com.br/portfolio/branding-exx-gestao-real-state/'
+  },
+  {
+    id: 6,
+    title: 'BELEZA GREGA',
+    category: 'Estética e Saúde',
+    description: 'Branding e identidade conceitual para clínica de estética',
+    tags: ['Branding', 'Identidade', 'Saúde'],
+    image: 'https://images.unsplash.com/photo-1595871151608-bc7abd1caca3?w=600&h=400&fit=crop',
+    link: 'https://senhaonline.com.br/portfolio/branding-beleza-grega-identidade-conceitual/'
+  },
+  {
+    id: 7,
+    title: 'BIOCENTER Campanha Social',
+    category: 'Saúde',
+    description: 'Campanha Junho Vermelho - Doação de sangue',
+    tags: ['Campanha', 'Social', 'Saúde'],
+    image: 'https://images.unsplash.com/photo-1683791895200-201c0c40310f?w=600&h=400&fit=crop',
+    link: 'https://senhaonline.com.br/portfolio/campanha-junho-vermelho-biocenter/'
+  },
+  {
+    id: 8,
+    title: 'VIVA Lounge Bar',
+    category: 'Restaurante & Bar',
+    description: 'Branding completo para restaurante e bar',
+    tags: ['Branding', 'Restaurante', 'Bar'],
+    image: 'https://images.unsplash.com/photo-1766844649151-f671c0ec206d?w=600&h=400&fit=crop',
+    link: 'https://senhaonline.com.br/portfolio/viva-lounge-bar-20190618175805/'
+  },
+  {
+    id: 9,
     title: 'Jardim Araucárias',
     category: 'Marketing Imobiliário',
     description: 'Book imobiliário e material de vendas',
@@ -147,16 +192,16 @@ export const portfolio = [
     link: 'https://senhaonline.com.br/portfolio/jardim-araucarias-book-imobiliario/'
   },
   {
-    id: 5,
+    id: 10,
     title: 'Allterra Agronegócio',
     category: 'Agronegócio',
-    description: 'Reposicionamento e nova arquitetura de marca para novos produtos, criando narrativa para redes sociais fortalecendo o naming da empresa',
+    description: 'Reposicionamento e nova arquitetura de marca para novos produtos',
     tags: ['Rebranding', 'Arquitetura de Marca', 'Social Media'],
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
     link: 'https://senhaonline.com.br/portfolio/branding-digital-allterra/'
   },
   {
-    id: 6,
+    id: 11,
     title: 'W&MED',
     category: 'Saúde',
     description: 'Apresentação do novo logo e identidade visual',
@@ -165,7 +210,7 @@ export const portfolio = [
     link: 'https://senhaonline.com.br/portfolio/apresentacao-do-novo-logo-da-w-amp-med/'
   },
   {
-    id: 7,
+    id: 12,
     title: 'Rigava',
     category: 'Corporativo',
     description: 'Rebranding e arquitetura de marca completa',
@@ -174,7 +219,7 @@ export const portfolio = [
     link: 'https://senhaonline.com.br/portfolio/rebranding-arquitetura-de-marca-rigava/'
   },
   {
-    id: 8,
+    id: 13,
     title: 'Brasfer Metalúrgica',
     category: 'Indústria',
     description: 'Rebranding e estratégia de comunicação industrial',
@@ -183,7 +228,7 @@ export const portfolio = [
     link: 'https://www.portalbrasfer.com.br/'
   },
   {
-    id: 9,
+    id: 14,
     title: 'Biocenter Laboratórios',
     category: 'Saúde',
     description: 'Marketing digital e presença online',
@@ -192,7 +237,7 @@ export const portfolio = [
     link: 'https://biocenterlaboratorios.com.br/'
   },
   {
-    id: 10,
+    id: 15,
     title: 'Cincor Americana',
     category: 'Saúde',
     description: 'Campanhas e comunicação visual',
