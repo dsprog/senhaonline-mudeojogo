@@ -65,28 +65,28 @@ use PHPMailer\PHPMailer\Exception;
 // ============================================
 $config = [
     // Configurações SMTP (Hostinger)
-    'smtp_host' => 'smtp.hostinger.com',      // Servidor SMTP da Hostinger
+    'smtp_host' => 'email-ssl.com.br',      // Servidor SMTP da Hostinger
     'smtp_port' => 465,                        // Porta SSL
     'smtp_secure' => 'ssl',                    // Tipo de segurança
     'smtp_auth' => true,                       // Autenticação
-    
+
     // Credenciais do email remetente
-    'smtp_user' => 'contato@senhaonline.com.br',  // Seu email na Hostinger
-    'smtp_pass' => 'SUA_SENHA_AQUI',              // Senha do email
-    
+    'smtp_user' => 'webform@senhaonline.com.br',  // Seu email na Hostinger
+    'smtp_pass' => 'xE@75i-lk1@2~ww',              // Senha do email
+
     // Destinatário
-    'to_email' => 'SAC@SENHAONLINE.COM.BR',
+    'to_email' => 'dsprog@gmail.com', // 'sac@senhaonline.com.br',
     'to_name' => 'Senha Comunicação - SAC',
-    
+
     // Remetente (como aparece no email)
-    'from_email' => 'contato@senhaonline.com.br',
+    'from_email' => 'sac@senhaonline.com.br',
     'from_name' => 'Site Senha Comunicação'
 ];
 // ============================================
 
 try {
     $mail = new PHPMailer(true);
-    
+
     // Configurações do servidor
     $mail->isSMTP();
     $mail->Host = $config['smtp_host'];
@@ -96,16 +96,16 @@ try {
     $mail->SMTPSecure = $config['smtp_secure'];
     $mail->Port = $config['smtp_port'];
     $mail->CharSet = 'UTF-8';
-    
+
     // Remetente e destinatário
     $mail->setFrom($config['from_email'], $config['from_name']);
     $mail->addAddress($config['to_email'], $config['to_name']);
     $mail->addReplyTo($email, $nome);
-    
+
     // Conteúdo do email
     $mail->isHTML(true);
     $mail->Subject = "Novo Contato do Site - {$nome}";
-    
+
     // Template HTML do email
     $mail->Body = "
     <!DOCTYPE html>
@@ -160,7 +160,7 @@ try {
     </body>
     </html>
     ";
-    
+
     // Versão texto simples
     $mail->AltBody = "
 NOVO CONTATO DO SITE - SENHA COMUNICAÇÃO
@@ -177,19 +177,19 @@ Mensagem:
 ========================================
 Este email foi enviado automaticamente pelo site.
     ";
-    
+
     // Enviar
     $mail->send();
-    
+
     echo json_encode([
-        'success' => true, 
+        'success' => true,
         'message' => 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
     ]);
-    
+
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode([
-        'success' => false, 
+        'success' => false,
         'message' => 'Erro ao enviar mensagem. Tente novamente mais tarde.',
         'error' => $mail->ErrorInfo // Remova esta linha em produção
     ]);
