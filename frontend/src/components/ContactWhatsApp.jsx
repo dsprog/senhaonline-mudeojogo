@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
@@ -25,12 +25,30 @@ export const ContactWhatsApp = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simular envio
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast.success('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-    setFormData({ nome: '', empresa: '', email: '', whatsapp: '', assunto: '' });
-    setIsSubmitting(false);
+    try {
+      // Envia para o script PHP
+      const response = await fetch('/mudeojogo/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success(data.message || 'Mensagem enviada com sucesso! Entraremos em contato em breve.');
+        setFormData({ nome: '', empresa: '', email: '', whatsapp: '', assunto: '' });
+      } else {
+        toast.error(data.message || 'Erro ao enviar mensagem. Tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro ao enviar formulário:', error);
+      toast.error('Erro ao enviar mensagem. Verifique sua conexão e tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
